@@ -23,7 +23,7 @@
                     <input class="input_contact" type="objet" name="objet" placeholder="Objet">
                 </div>
                 <input class="input_txt_contact" type="text" name="description" placeholder="Votre message">
-                <button type="submit"><a class="main_btn main_btn_pink btn_contact">ENVOYER</a></button>
+                <button class="main_btn main_btn_pink btn_contact" type="submit">ENVOYER</button>
             </div>
         </div>
     </section>
