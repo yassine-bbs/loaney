@@ -225,6 +225,7 @@ time, mark, audio, video {
     position: absolute;
     top: -15px;
     left: 0px;
+    text-decoration: none;
 }
 
 .home_section {
@@ -253,11 +254,13 @@ time, mark, audio, video {
     position: absolute;
     bottom: -20px;
     right: 50px;
+    text-decoration: none;
 }
 .home_btn_concept {
     position: absolute;
     bottom: -20px;
     left: 50px;
+    text-decoration: none;
 }
 .section_content_container {
     display: flex;

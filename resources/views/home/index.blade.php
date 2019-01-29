@@ -7,7 +7,7 @@
         <h1 class="header_title">La première plateforme de<br /> micro-crédit étudiante.</h1>
     </div>
     <div class="header_bg_quoi">
-        <a class="main_btn main_btn_blue header_btn">C'est quoi ?</a>
+        <a class="main_btn main_btn_blue header_btn" href="{{url('concept')}}">C'est quoi ?</a>
     </div>
 </header>
 <main class="home_main">
@@ -19,7 +19,7 @@
             <img src="img/img_soutien_2.png" alt="">
             <img src="img/img_soutien_3.png" alt="">
         </div>
-        <a class="main_btn main_btn_pink home_btn_partenaires">Partenaires</a>
+        <a class="main_btn main_btn_pink home_btn_partenaires" href="{{url('partenaire')}}">Partenaires</a>
     </section>
     <section class="home_section  home_section_white">
         <h2 class="main_title">Obtenez un micro-crédit rapidement</h2>
@@ -41,7 +41,7 @@
                 <p>Obtenez une réponse et l'argent sur votre compte en 24h</p>
             </div>
         </div>
-        <a class="main_btn main_btn_pink home_btn_concept">Concept</a>
+        <a class="main_btn main_btn_pink home_btn_concept" href="{{url('concept')}}">Concept</a>
     </section>
     <section class="home_section home_section_grey">
         <h2 class="main_title">Ce que nos utilisateurs pensent de nous</h2>
