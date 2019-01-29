@@ -4,7 +4,7 @@
             <p class="footer_description">Tout droits réservés à LOANEY.</p>
             <p class="footer_copyright">Copyright © 2019 LOANEY. All Rights Reserved.</p>
             <ul class="footer_list_items">
-                <li class="footer_item">Home</li>
+                <li class="footer_item"><a class="link_footer" href="{{ url('/') }}">Home</a></li>
                 <li class="footer_item">Mentions Légales</li>
                 <li class="footer_item"><a class="link_footer" href="{{ url('contact') }}">Contact</a></li>
             </ul>
