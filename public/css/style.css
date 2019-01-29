@@ -68,7 +68,6 @@ time, mark, audio, video {
 /*
     Nav
 */
-
 .nav {
     box-shadow: var(--main-shadow);
     background-color: white;
@@ -77,6 +76,7 @@ time, mark, audio, video {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 .nav_container {
     height: 100%;
@@ -109,6 +109,10 @@ time, mark, audio, video {
     font-family: var(--main-font);
     color: var(--main-txt-color);
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 .nav_items:hover {
     border-bottom: 2px solid;
@@ -117,6 +121,23 @@ time, mark, audio, video {
 .nav_items:last-child:hover {
     border-bottom: 2px solid;
     border-color: white;
+}
+
+.header_description, .home_main, .nav_container {
+    width: var(--main-width);
+    margin: auto;
+}
+
+.home_header {
+    height: 100vh;
+}
+
+.header_desc, .header_title, .header_btn{margin-left: 30px;}
+.header_desc {margin-top: 50px;}
+.header_title {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
 }
 
 /*
@@ -166,37 +187,45 @@ time, mark, audio, video {
     margin-top: 10px;
     margin-bottom: 20px
 }
+.link_footer {
+    color: #A7A7A7;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link_footer:hover {
+    color: white;
+}
 
 /*
     Home Page
 */
 
-.header_description, .home_main, .nav_container {
-    width: var(--main-width);
-    margin: auto;
-}
 
 .home_header {
     height: 100vh;
 }
 .header_description {
-    background-image: url('../img/bg_home.png');
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+.header_bg_quoi {
+    background-image: url(../img/bg_home.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
     background-size: 100%;
-    height: calc(85vh - 50px);
-    margin-top: 20vh;
+    width: var(--main-width);
+    margin: auto;
+    height: 60vh;
+    position: relative;
 }
-.header_desc, .header_title, .header_btn{margin-left: 30px;}
-.header_desc {margin-top: 50px;}
-.header_title {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 2.5em;
+.header_btn {
+    margin-top: -10px;
+    position: absolute;
+    top: -15px;
+    left: 0px;
 }
-
-
 
 .home_section {
     display: flex;
@@ -269,40 +298,32 @@ time, mark, audio, video {
 .section_user_name {
     font-weight: 600;
 }
+
+
+
 /*
     Concept Page
 */
 
-.header_description, .home_main, .nav_container {
-    width: var(--main-width);
-    margin: auto;
-}
-
-.home_header {
-    height: 100vh;
-}
 .header_description_page {
     height: 50vh;
     margin-top: 20vh;
+    margin-left: 10vh;
+
 }
-.header_desc, .header_title, .header_btn{margin-left: 30px;}
-.header_desc {margin-top: 50px;}
-.header_title {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-}
+
 .concept_description_header {
     background-color: var(--second-bg-color);
     height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 30px !important;
 }
 .concept_description_header > p {
     width: 60%;
-    line-height: 2em;
-    font-size: 1.5em;
+    line-height: 1.8em;
+    font-size: 1em;
 }
 .concept_description_header > div {
     width: 30%;
@@ -392,8 +413,8 @@ time, mark, audio, video {
     font-size: 0.8em;
 }
 .qsn_user_img {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
 }
 
 /*
@@ -402,6 +423,7 @@ time, mark, audio, video {
 
 .header_description_partenaire {
     margin-top: 20vh;
+    margin-left: 10vh;
 }
 .home_header_partenaire {
     height: 30vh;
@@ -435,11 +457,12 @@ time, mark, audio, video {
 
 .header_description_emprunt {
     margin-top: 20vh;
+    margin-left: 10vh;
 }
-
 .home_header_emprunt {
     height: 30vh;
 }
+
 
 .emprunter_section {
     width: var(--main-width);
@@ -450,6 +473,7 @@ time, mark, audio, video {
     align-items: center;
     margin-bottom: 10vh;
     padding-bottom: 70px;
+    position: relative;
 }
 .emprunter_desc {
     width: 50%;
@@ -534,11 +558,15 @@ time, mark, audio, video {
 .form_last_value_section {
     width: 45%;
     margin: auto;
-    margin-top: -50%;
+    margin-top: -45%;
 }
 .last_select {
     width: 100%;
     height: 58px;
+}
+.emprunt_btn {
+    position: absolute;
+    bottom: -20px;
 }
 
 .tarif_section {
@@ -550,6 +578,80 @@ time, mark, audio, video {
     align-items: center;
     background-color: var(--second-bg-color);
 }
+
+/*
+    Contact Page
+*/
+
+.header_description_contact {
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+.home_header_contact {
+    height: 20vh;
+}
+
+
+.contact_section {
+    width: 100%;
+    background-color: var(--second-bg-color);
+    margin: auto;
+    margin-bottom: 40vh;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_container {
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_title, .contact_content{
+    width: 90%;
+    margin: auto;
+}
+.contact_title {
+    margin-bottom: 0;
+}
+.contact_content {
+    height: 70%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.champs_contact_double {
+    display: flex;
+    justify-content: space-between;
+}
+.input_contact {
+    width: calc(50% - 25px);
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+.input_txt_contact {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+.btn_contact {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 
 
 
