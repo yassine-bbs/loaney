@@ -655,6 +655,144 @@ time, mark, audio, video {
     margin: auto;
 }
 
+/*
+    mentions Page
+*/
+
+.header_description_mentions {
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+.home_header_mentions {
+    height: 20vh;
+}
+.mentions_legales_section {
+    margin-bottom: 100px;
+}
+.mentions_legales_content {
+    line-height: 1.3em;
+}
+
+/*
+    pret Page
+*/
+
+.header_description_pret {
+    height: 30vh;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+.home_header_pret {
+    height: 20vh;
+}
+
+
+.preter_section {
+    width: var(--main-width);
+    margin: auto;
+    background-color: var(--main-btn-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    padding-bottom: 70px;
+    position: relative;
+}
+.preter_desc {
+    width: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--main-txt-color);
+    font-weight: 100;
+}
+
+.section_form_preter_preter {
+    width: 100%;
+}
+.form_preter_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+}
+.form_preter_item_container {
+    width: 50%;
+    height: 25%;
+}
+.form_preter_title {
+    margin-bottom: 5px;
+    color: white;
+}
+.form_preter_value_container {
+    display: flex;
+    justify-content: space-between;
+}
+.form_preter_txt_container {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 86%;
+    height: 58px;
+
+}
+.form_preter_txt_nb {
+    font-weight: bold;
+    font-size: 1.5vw;
+    width: 75%;
+}
+.form_preter_txt_devise {
+    font-weight: 100;
+    font-size: 0.7vw;
+    color: lightgrey;
+}
+.form_preter_btn_container {
+    width: 28px;
+    height: 58px;
+}
+.form_preter_btn {
+    background-color: lightgrey;
+    color: white;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-left: 1px solid lightgrey;
+}
+.form_preter_btn:hover {
+    border-left: 1px solid grey;
+}
+.btn_border {
+    height: calc(50% - 1px);
+    border-bottom: 1px solid grey;
+}
+.special_container_form .form_preter_txt_container {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 100%;
+}
+.special_container_form .form_preter_txt_devise {
+    color: grey;
+}
+.form_preter_last_value_section {
+    width: 45%;
+    margin: auto;
+    margin-top: 25px;
+}
+.last_select {
+    width: 100%;
+    height: 58px;
+}
+.preter_btn {
+    position: absolute;
+    bottom: -20px;
+}
+
 
 
 

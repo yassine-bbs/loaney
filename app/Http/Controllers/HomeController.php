@@ -33,6 +33,14 @@ class HomeController extends Controller
     {
         return view('home.contact');
     }
+    function mentions()
+    {
+        return view('home.mentions');
+    }
+    function pret()
+    {
+        return view('home.pret');
+    }
 
     /**
      * Show the form for creating a new resource.
